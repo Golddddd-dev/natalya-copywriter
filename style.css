@@ -1795,6 +1795,14 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-04 .связь__действие .кнопка { width: 100%; max-width: 360px; justify-content: center; }
 
   #экран-04 .связь__кнопки { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%; }
+
+  #экран-04 .связь__кнопки .кнопка--главная {
+      background-image: linear-gradient(180deg, transparent 45%, color-mix(in srgb, var(--цвет-тёмный-фон) 14%, transparent));
+      box-shadow: 0 0 22px color-mix(in srgb, var(--цвет-тёплый) 38%, transparent), 0 6px 16px color-mix(in srgb, var(--цвет-тёмный-фон) 45%, transparent); }
+
+  #экран-04 .связь__вторая { background: transparent; color: var(--цвет-тёплый); border: 1.5px solid color-mix(in srgb, var(--цвет-тёплый) 85%, transparent);
+      box-shadow: none; }
+  #экран-04 .связь__вторая:hover { background: color-mix(in srgb, var(--цвет-тёплый) 12%, transparent); }
   @media (max-width: 799px) {
     #экран-04 .связь { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   }
